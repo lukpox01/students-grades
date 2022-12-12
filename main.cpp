@@ -60,6 +60,10 @@ public:
     string get_name(){
         return name;
     }
+
+    string get_class(){
+        return class_;
+    }
     void set_name(string name_){
         name = name_;
     }
@@ -131,7 +135,7 @@ public:
     Student choose_student(){
         cout << "CHOOSE STUDENT"<<endl;
         for(int i=0; i<=students.size()-1; i++){
-            cout << i<<") "<<students[i].get_name() << " "<< endl;
+            cout << i<<") "<<students[i].get_name() << " " << students[i].get_class() << endl;
         }
         int a;
         cout << "Choose student:";
